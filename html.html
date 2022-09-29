@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+`
+        <title>Typing Speed</title>
+        <link rel="stylesheet" href="csss.css"/>
+    </head>
+    <body>
+        
+        <div class="game">
+            <video autoplay loop muted plays-inline class="back"><source src="pexels-cottonbro-9665237.mp4" type="video/mp4"></video>
+            <h1 class="name">Typing Game</h1>
+            <div class="container">
+                    <select id="diff" class="select" onchange="updateLevel()"> 
+                        <option value="Easy">Easy</option>  
+                        <option value="Normal">Normal</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </div>
+              <div class="start">Click To Play</div>
+              <div class="the-word"></div>
+              <div class="upcoming-words"></div>
+
+              <input type="text" class="input" />
+
+              <div class="control">
+
+                <div class="time">Timer: <span></span> Seconds</div>
+                <div class="score"> Score: <span class="got">0</span>/<span class="total"></span>
+                </div>
+                
+              </div>
+              <div class="finish"></div>
+              <div onclick="tryagain()" class="button">Try Again</div>
+
+            </div>
+
+          </div>
+  <script src="./js.js"></script>
+    </body>
+</html>
